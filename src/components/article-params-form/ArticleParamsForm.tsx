@@ -42,7 +42,7 @@ export const ArticleParamsForm = ({ setSettings }: TArticleParamsFormProps) => {
 		};
 	}, [isFormOpen]);
 
-	function handleCloseMenu(event: Event) {
+	function handleCloseMenu(event: MouseEvent) {
 		if (
 			isFormOpen &&
 			!containerFormRef.current?.contains(event.target as Node)
